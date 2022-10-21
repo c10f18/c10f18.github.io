@@ -273,6 +273,8 @@ defaults:
       read_time: true
       share: true
       related: true
+      sidebar:
+        nav: "main"
   # _pages
   - scope:
       path: "_pages"
@@ -280,6 +282,8 @@ defaults:
     values:
       layout: single
       author_profile: true
+      sidebar:
+        nav: "main"
   # _recipes
   - scope:
       path: ""

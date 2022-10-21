@@ -3,7 +3,7 @@ main:
   - title: "Home"
     url: https://c10f18.github.io/
   - title: "About"
-    url: https://c10f18.github.io/about/
+    url: /about/
   - title: "TEST"
     url: /category-archive/
      

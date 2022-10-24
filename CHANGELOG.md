@@ -855,7 +855,7 @@
 
 ### Maintenance
 
-* Add theme meta info to `_layouts/default.html` and `main.css`.
+* Add theme meta info to `_layouts/default.html` and `main`.
 * Update README.
 * Improve the pagination and taxonomy archive documentation. [#826](https://github.com/mmistakes/minimal-mistakes/pull/826)
 * Add comments to `/docs/_config.yml` to clarify use of YAML references. [#847](https://github.com/mmistakes/minimal-mistakes/pull/847)

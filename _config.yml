@@ -283,7 +283,7 @@ defaults:
       layout: home
       author_profile: true
       sidebar:
-        nav: main-sidebar
+        nav: "nav-main"
   # _posts
   - scope:
       path: ""
@@ -296,7 +296,7 @@ defaults:
       share: false
       related: false
       sidebar:
-        nav: nav-main
+        nav: "nav-main"
   # _collection
   - scope:
       path: ""
@@ -309,7 +309,7 @@ defaults:
       share: false
       related: false
       sidebar:
-        nav: nav-main
+        nav: "nav-main"
   # _archive
   - scope:
       path: ""
@@ -322,4 +322,4 @@ defaults:
       share: false
       related: false
       sidebar:
-        nav: nav-main
+        nav: "nav-main"

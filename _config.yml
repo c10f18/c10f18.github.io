@@ -276,8 +276,6 @@ compress_html:
 
 # Defaults
 defaults:
-  sidebar:
-    nav: "nav-main"
   # _posts
   - scope:
       path: ""

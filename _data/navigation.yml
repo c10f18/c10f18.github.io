@@ -1,47 +1,47 @@
 # main links
 main:
-  - title: "Home"
-    url: https://c10f18.github.io/
-  - title: "About"
-    url: /about/#page-title
-  - title: "TEST"
-    url: /category-archive/
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "CS"
-    url: /cs-archive/
-    children:
-    - title: "Algorithm"
-      url: /algorithm-archive/
-  - title: "Lifestyle"
-    url: /lifestyle-archive/
-    children:
-    - title: "Activity"
-      url: /activity-archive/
-    - title: "Game"
-      url: /game-archive/
-    - title: "Recipe"
-      url: /recipe-archive/
-  - title: "Programming"
-    url: /programming-archive/
-    children:
-    - title: "JAVA"
-      url: /java-archive/
-    - title: "Python"
-      url: /python-archive/
-    - title: "Javascript"
-      url: /javascript-archive/
-  - title: "Project"
-    url: /project-archive/
-    children:
-    - title: "Jekyll Blog"
-      url: /jekyll_blog-archive/
-  - title: "Study"
-    url: /study-archive/
-  - title: "Tools"
-    url: /tools-archive/
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+#- title: "Home"
+#  url: https://c10f18.github.io/
+#- title: "About"
+#  url: /about/#page-title
+#- title: "TEST"
+#  url: /category-archive/
+#- title: "Quick-Start Guide"
+#  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+#- title: "CS"
+#  url: /cs-archive/
+#  children:
+#  - title: "Algorithm"
+#    url: /algorithm-archive/
+#- title: "Lifestyle"
+#  url: /lifestyle-archive/
+#  children:
+#  - title: "Activity"
+#    url: /activity-archive/
+#  - title: "Game"
+#    url: /game-archive/
+#  - title: "Recipe"
+#    url: /recipe-archive/
+#- title: "Programming"
+#  url: /programming-archive/
+#  children:
+#  - title: "JAVA"
+#    url: /java-archive/
+#  - title: "Python"
+#    url: /python-archive/
+#  - title: "Javascript"
+#    url: /javascript-archive/
+#- title: "Project"
+#  url: /project-archive/
+#  children:
+#  - title: "Jekyll Blog"
+#    url: /jekyll_blog-archive/
+#- title: "Study"
+#  url: /study-archive/
+#- title: "Tools"
+#  url: /tools-archive/
+#- title: "Quick-Start Guide"
+#  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   
 nav-main:
   - title: "Home"
@@ -49,12 +49,10 @@ nav-main:
   - title: "About"
     url: /about/#page-title
   - title: "CS"
-    url: /cs-archive/
     children:
     - title: "Algorithm"
       url: /algorithm-archive/
   - title: "Lifestyle"
-    url: /lifestyle-archive/
     children:
     - title: "Activity"
       url: /activity-archive/
@@ -63,7 +61,6 @@ nav-main:
     - title: "Recipe"
       url: /recipe-archive/
   - title: "Programming"
-    url: /programming-archive/
     children:
     - title: "JAVA"
       url: /java-archive/
@@ -72,7 +69,6 @@ nav-main:
     - title: "Javascript"
       url: /javascript-archive/
   - title: "Project"
-    url: /project-archive/
     children:
     - title: "Jekyll Blog"
       url: /jekyll_blog-archive/

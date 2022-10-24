@@ -1,9 +1,9 @@
 ---
-layout: collection
+layout: archive
 title: "Python"
 collection: python
 permalink: /archive/python-archive/
-type: collection
+type: archive
 ---
 
 Sample document listing for the collection `_python`.

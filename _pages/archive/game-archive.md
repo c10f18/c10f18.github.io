@@ -1,9 +1,9 @@
 ---
-layout: collection
+layout: archive
 title: "Game"
 collection: game
 permalink: /archive/game-archive/
-type: collection
+type: archive
 ---
 
 Sample document listing for the collection `_game`.

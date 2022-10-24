@@ -1,9 +1,9 @@
 ---
-layout: collection
+layout: archive
 title: "Algorithm"
 collection: algorithm
 permalink: /archive/algorithm-archive/
-type: collection
+type: archive
 ---
 
 Sample document listing for the collection `_algorithm`.

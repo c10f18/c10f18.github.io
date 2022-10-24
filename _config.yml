@@ -103,11 +103,11 @@ analytics:
 author:
   name             : "Decalin"
   avatar           :  # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : ""
-  location         : ""
+  bio              : 
+  location         : 
   email            :
   links:
-    - label: "Email"
+    - label: "sallyiam00@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:sallyiam00@gmail.com"
     #- label: "Website"
@@ -296,6 +296,19 @@ defaults:
     values:
       layout: collection
       author_profile: false
+      read_time: true
+      comments: false # true
+      share: false
+      related: false
+      sidebar:
+        nav: "nav-main"
+  # _archive
+  - scope:
+      path: ""
+      type: archive
+    values:
+      layout: archive
+      author_profile: true
       read_time: true
       comments: false # true
       share: false

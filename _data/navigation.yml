@@ -51,28 +51,28 @@ nav-main:
   - title: "CS"
     children:
     - title: "Algorithm"
-      url: /algorithm-archive/
+      url: /archive/algorithm-archive/
   - title: "Lifestyle"
     children:
     - title: "Activity"
-      url: /activity-archive/
+      url: /archive/activity-archive/
     - title: "Game"
-      url: /game-archive/
+      url: /archive/game-archive/
     - title: "Recipe"
-      url: /recipe-archive/
+      url: /archive/recipe-archive/
   - title: "Programming"
     children:
     - title: "JAVA"
-      url: /java-archive/
+      url: /archive/java-archive/
     - title: "Python"
-      url: /python-archive/
+      url: /archive/python-archive/
     - title: "Javascript"
-      url: /javascript-archive/
+      url: /archive/javascript-archive/
   - title: "Project"
     children:
     - title: "Jekyll Blog"
-      url: /jekyll_blog-archive/
+      url: /archive/jekyll_blog-archive/
   - title: "Study"
-    url: /study-archive/
+    url: /archive/study-archive/
   - title: "Tools"
-    url: /tools-archive/
+    url: /archive/tools-archive/

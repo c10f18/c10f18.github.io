@@ -7,4 +7,4 @@
 @import "default/minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 // @import "default/minimal-mistakes"; // main partials
 
-@import "main";
+@import "master";

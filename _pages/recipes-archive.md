@@ -1,9 +1,0 @@
----
-layout: collection
-title: "Recipes"
-collection: recipes
-permalink: /recipes-archive/
-type: collection
----
-
-Sample document listing for the collection `_recipes`.

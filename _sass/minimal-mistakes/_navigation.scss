@@ -505,12 +505,14 @@
 
 .toc {
   font-family: $sans-serif-narrow;
-  color: $gray;
+  // color: $gray;
+  color: $main-point-color;
   background-color: $background-color;
-  border: 1px solid $border-color;
-  border-radius: $border-radius;
-  -webkit-box-shadow: $box-shadow;
-  box-shadow: $box-shadow;
+  // border: 1px solid $border-color;
+  // border-radius: $border-radius;
+  // -webkit-box-shadow: $box-shadow;
+  // box-shadow: $box-shadow;
+  padding: 0.2em;
 
   .nav__title {
     color: #fff;

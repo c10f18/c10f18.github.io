@@ -2,7 +2,7 @@
 layout: archive
 title: "Study"
 collection: study
-permalink: /archive/study-archive/
+permalink: /categories/study-archive/
 type: archive
 ---
 

@@ -2,7 +2,7 @@
 layout: archive
 title: "Javascript"
 collection: javascript
-permalink: /archive/javascript-archive/
+permalink: /categories/javascript-archive/
 type: archive
 ---
 

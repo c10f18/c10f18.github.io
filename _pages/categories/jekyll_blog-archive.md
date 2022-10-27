@@ -2,7 +2,7 @@
 layout: archive
 title: "Jekyll blog"
 collection: jekyll_blog
-permalink: /archive/jekyll_blog-archive/
+permalink: /categories/jekyll_blog-archive/
 type: archive
 ---
 

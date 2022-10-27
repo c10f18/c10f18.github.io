@@ -293,6 +293,7 @@ defaults:
       author_profile: true
       show_date: true
       toc: true
+      toc_sticky : true
       read_time: true
       comments: true # true
       share: false

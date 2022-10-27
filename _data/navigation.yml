@@ -5,41 +5,41 @@ main:
 #- title: "About"
 #  url: /about/#page-title
 #- title: "TEST"
-#  url: /category-archive/
+#  url: /category-categories/
 #- title: "Quick-Start Guide"
 #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
 #- title: "CS"
-#  url: /cs-archive/
+#  url: /cs-categories/
 #  children:
 #  - title: "Algorithm"
-#    url: /algorithm-archive/
+#    url: /algorithm-categories/
 #- title: "Lifestyle"
-#  url: /lifestyle-archive/
+#  url: /lifestyle-categories/
 #  children:
 #  - title: "Activity"
-#    url: /activity-archive/
+#    url: /activity-categories/
 #  - title: "Game"
-#    url: /game-archive/
+#    url: /game-categories/
 #  - title: "Recipe"
-#    url: /recipe-archive/
+#    url: /recipe-categories/
 #- title: "Programming"
-#  url: /programming-archive/
+#  url: /programming-categories/
 #  children:
 #  - title: "JAVA"
-#    url: /java-archive/
+#    url: /java-categories/
 #  - title: "Python"
-#    url: /python-archive/
+#    url: /python-categories/
 #  - title: "Javascript"
-#    url: /javascript-archive/
+#    url: /javascript-categories/
 #- title: "Project"
-#  url: /project-archive/
+#  url: /project-categories/
 #  children:
 #  - title: "Jekyll Blog"
-#    url: /jekyll_blog-archive/
+#    url: /jekyll_blog-categories/
 #- title: "Study"
-#  url: /study-archive/
+#  url: /study-categories/
 #- title: "Tools"
-#  url: /tools-archive/
+#  url: /tools-categories/
 #- title: "Quick-Start Guide"
 #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   
@@ -53,33 +53,33 @@ nav-main:
   - title: "CS"
     children:
     - title: "Algorithm"
-      url: /archive/algorithm-archive/
+      url: /categories/algorithm-categories/
 
   - title: "Lifestyle"
     children:
     - title: "Activity"
-      url: /archive/activity-archive/
+      url: /categories/activity-categories/
     - title: "Game"
-      url: /archive/game-archive/
+      url: /categories/game-categories/
     - title: "Recipe"
-      url: /archive/recipe-archive/
+      url: /categories/recipe-categories/
 
   - title: "Programming"
     children:
     - title: "JAVA"
-      url: /archive/java-archive/
+      url: /categories/java-categories/
     - title: "Python"
-      url: /archive/python-archive/
+      url: /categories/python-categories/
     - title: "Javascript"
-      url: /archive/javascript-archive/
+      url: /categories/javascript-categories/
 
   - title: "Project"
     children:
     - title: "Jekyll Blog"
-      url: /archive/jekyll_blog-archive/
+      url: /categories/jekyll_blog-categories/
 
   - title: "Study"
-    url: /archive/study-archive/
+    url: /categories/study-categories/
 
   - title: "Tools"
-    url: /archive/tools-archive/
+    url: /categories/tools-categories/

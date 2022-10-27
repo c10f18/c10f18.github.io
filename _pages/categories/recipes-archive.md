@@ -1,9 +1,9 @@
 ---
-layout: collection
+layout: archive
 title: "Recipes"
 collection: recipes
-permalink: /recipes-archive/
-author_profile: false
+permalink: /categories/recipes-archive/
+type: archive
 ---
 
 Sample document listing for the collection `_recipes`.

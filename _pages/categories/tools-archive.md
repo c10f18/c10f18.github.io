@@ -2,7 +2,7 @@
 layout: archive
 title: "Tools"
 collection: tools
-permalink: /categories/tools-archive/
+permalink: /categories/tools-archive
 type: archive
 ---
 

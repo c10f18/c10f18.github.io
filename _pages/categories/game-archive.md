@@ -2,7 +2,7 @@
 layout: archive
 title: "Game"
 collection: game
-permalink: /categories/game-archive/
+permalink: /categories/game-archive
 type: archive
 ---
 

@@ -2,7 +2,7 @@
 layout: archive
 title: "Recipes"
 collection: recipes
-permalink: /categories/recipes-archive/
+permalink: /categories/recipes-archive
 type: archive
 ---
 

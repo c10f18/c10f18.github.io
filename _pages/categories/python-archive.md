@@ -2,7 +2,7 @@
 layout: archive
 title: "Python"
 collection: python
-permalink: /categories/python-archive/
+permalink: /categories/python-archive
 type: archive
 ---
 

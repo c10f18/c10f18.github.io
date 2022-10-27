@@ -2,7 +2,7 @@
 layout: archive
 title: "JAVA"
 collection: java
-permalink: /categories/java-archive/
+permalink: /categories/java-archive
 type: archive
 ---
 

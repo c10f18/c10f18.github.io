@@ -2,7 +2,7 @@
 layout: archive
 title: "Algorithm"
 collection: algorithm
-permalink: /categories/algorithm-archive/
+permalink: /categories/algorithm-archive
 type: archive
 ---
 

@@ -2,7 +2,7 @@
 layout: archive
 title: "Activity"
 collection: activity
-permalink: /categories/activity-archive/
+permalink: /categories/activity-archive
 type: archive
 ---
 

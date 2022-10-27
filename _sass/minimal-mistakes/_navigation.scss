@@ -516,10 +516,12 @@
 
   .nav__title {
     color: #fff;
-    font-size: $type-size-6;
-    background: $primary-color;
-    border-top-left-radius: $border-radius;
-    border-top-right-radius: $border-radius;
+    font-size: $type-size-3;
+    // background: $primary-color;
+    background: $main-point-color;
+    // border-top-left-radius: $border-radius;
+    // border-top-right-radius: $border-radius;
+    text-align: center;
   }
 
   // Scrollspy marks toc items as .active when they are in focus
@@ -534,6 +536,7 @@
   width: 100%;
   list-style: none;
   font-size: $type-size-6;
+  border: 2px solid $main-point-color;
 
   @include breakpoint($large) {
     font-size: $type-size-7;
@@ -541,11 +544,11 @@
 
   a {
     display: block;
-    padding: 0.25rem 0.75rem;
+    padding: 0.05rem 0.75rem;
     color: $muted-text-color;
     font-weight: bold;
     line-height: 1.5;
-    border-bottom: 1px solid $border-color;
+    // border-bottom: 1px solid $border-color;
 
     &:hover {
       color: $text-color;

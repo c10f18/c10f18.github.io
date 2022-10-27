@@ -291,6 +291,8 @@ defaults:
     values:
       layout: single
       author_profile: true
+      show_date: true
+      toc: true
       read_time: true
       comments: true # true
       share: false

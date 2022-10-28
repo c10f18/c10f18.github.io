@@ -6,4 +6,5 @@ permalink: /categories/python-archive
 type: archive
 ---
 
-Sample document listing for the collection `_python`.
+{% assign posts = site.categories.python %}
+{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

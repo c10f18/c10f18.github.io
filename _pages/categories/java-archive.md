@@ -6,4 +6,5 @@ permalink: /categories/java-archive
 type: archive
 ---
 
-Sample document listing for the collection `_java`.
+{% assign posts = site.categories.java %}
+{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

@@ -522,13 +522,13 @@
   margin: 0px 0px 15px 0px;
 
   .nav__title {
-    color: #fff;
+    color: $red;
     font-size: $type-size-3;
     // background: $primary-color;
     // border-top-left-radius: $border-radius;
     // border-top-right-radius: $border-radius;
     text-align: center;
-    -webkit-text-stroke: 0.5px $red;
+    //-webkit-text-stroke: 0.5px $red;
   }
 
   // Scrollspy marks toc items as .active when they are in focus

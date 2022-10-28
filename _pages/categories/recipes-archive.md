@@ -6,4 +6,5 @@ permalink: /categories/recipes-archive
 type: archive
 ---
 
-Sample document listing for the collection `_recipes`.
+{% assign posts = site.categories.recipes %}
+{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

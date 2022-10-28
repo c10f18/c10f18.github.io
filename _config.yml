@@ -126,6 +126,10 @@ author:
     #  icon: "fab fa-fw fa-instagram"
     #  # url: "https://instagram.com/"
 
+# Site Script
+head_scripts:
+  - https://code.jquery.com/jquery-3.2.1.min.js
+
 # Site Footer
 footer:
   links:

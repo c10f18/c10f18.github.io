@@ -35,7 +35,7 @@ layout: default
         {% if page.toc %}
           <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
             <nav class="toc">
-              <header><h4 class="nav__title">{{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "CONTENTS" }}</h4></header>
+              <header id="toc__title"><h4 class="nav__title">{{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "CONTENTS" }}</h4></header>
               {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=true %}
               <div class="toc__bg-box">
                 <canvas id="toc__bg" class="toc__bg"></canvas>
@@ -96,7 +96,47 @@ canvas.height = $('nav.toc')[0].offsetHeight;
 canvas.width = $('nav.toc')[0].offsetWidth;
 var ctx = canvas.getContext('2d');
 
-//toc 타이틀 테두리
-// ctx.strokeRect(2, 2, canvas.width - 4, $('nav.toc > header')[0].offsetHeight);
-// ctx.strokeRect(2 + (canvas.width - 4), 2 + $('nav.toc > header')[0].offsetHeight, canvas.width - 4, (2 + $('nav.toc > header')[0].offsetHeight) + ($('ul.toc__menu')[0].offsetHeight / 2) - 2);
+var toc_deco_radius = 14;
+var toc_padding = 2;
+var toc_height = $('#toc__bg')[0].offsetHeight - toc_padding * 2;
+var toc_width = $('#toc__bg')[0].offsetWidth - toc_padding * 2;
+var toc_title_height = $('#toc__title')[0].offsetHeight - toc_padding * 2;
+var toc_title_width = $('#toc__title')[0].offsetWidth - toc_padding * 2;
+
+ctx.beginPath();
+//시작
+ctx.arc(toc_padding, toc_padding, toc_deco_radius, 0, Math.PI/2, false);
+ctx.moveTo(toc_padding, toc_padding + toc_deco_radius);
+//left
+ctx.lineTo(toc_padding, toc_height/2 - toc_deco_radius);
+ctx.arc(toc_padding, toc_height/2, toc_deco_radius/2, -Math.PI/2, Math.PI/2, false);
+ctx.moveTo(toc_padding, toc_height/2 + toc_deco_radius/2);
+ctx.lineTo(toc_padding, toc_height - toc_deco_radius);
+ctx.arc(toc_padding, toc_height, toc_deco_radius, -Math.PI/2, 0, false);
+//bottom
+ctx.moveTo(toc_padding + toc_deco_radius, toc_height);
+ctx.lineTo(toc_width - toc_deco_radius, toc_height);
+ctx.arc(toc_width, toc_height, toc_deco_radius, Math.PI, -Math.PI/2, false);
+ctx.moveTo(toc_width, toc_height - toc_deco_radius);
+//right
+ctx.lineTo(toc_width, toc_height/2 + toc_deco_radius);
+ctx.arc(toc_width, toc_height/2, toc_deco_radius/2, Math.PI/2, -Math.PI/2, false);
+ctx.moveTo(toc_width, toc_height/2 - toc_deco_radius/2);
+ctx.lineTo(toc_width, toc_padding + toc_deco_radius);
+ctx.arc(toc_width, toc_padding, toc_deco_radius, Math.PI/2, Math.PI, false);
+//top
+ctx.moveTo(toc_width - toc_deco_radius, toc_padding);
+ctx.lineTo(toc_padding + toc_deco_radius, toc_padding);
+
+ctx.strokeStyle = "red";
+ctx.stroke();
+
+//cutting line
+ctx.beginPath();
+ctx.moveTo(toc_padding, toc_title_height);
+ctx.lineTo(toc_title_width, toc_title_height);
+ctx.strokeStyle = "red";
+ctx.setLineDash([5, 5]);
+ctx.stroke();
+
 </script>

@@ -38,7 +38,7 @@ layout: default
               <header><h4 class="nav__title">{{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "CONTENTS" }}</h4></header>
               {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=true %}
               <div class="toc__bg-box">
-                <canvas class="toc__bg"></canvas>
+                <canvas id="toc__bg" class="toc__bg"></canvas>
               </div>
             </nav>
           </aside>
@@ -90,3 +90,9 @@ layout: default
     </div>
   {% endif %}
 </div>
+<script>
+var canvas = $('#toc__bg');
+var ctx = canvas.getContext('2d');
+
+//
+</script>

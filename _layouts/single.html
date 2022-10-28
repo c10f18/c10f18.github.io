@@ -91,8 +91,12 @@ layout: default
   {% endif %}
 </div>
 <script>
-var canvas = $('#toc__bg');
+var canvas = $('#toc__bg')[0];
+canvas.height = $('nav.toc')[0].offsetHeight;
+canvas.width = $('nav.toc')[0].offsetWidth;
 var ctx = canvas.getContext('2d');
 
-//
+//toc 타이틀 테두리
+// ctx.strokeRect(2, 2, canvas.width - 4, $('nav.toc > header')[0].offsetHeight);
+// ctx.strokeRect(2 + (canvas.width - 4), 2 + $('nav.toc > header')[0].offsetHeight, canvas.width - 4, (2 + $('nav.toc > header')[0].offsetHeight) + ($('ul.toc__menu')[0].offsetHeight / 2) - 2);
 </script>

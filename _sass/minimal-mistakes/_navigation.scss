@@ -505,6 +505,7 @@
 
 .toc {
   font-family: $sans-serif-narrow;
+  margin: 0px 0px 15px 0px;
 
   .nav__title {
     color: #fff;
@@ -524,8 +525,7 @@
 }
 
 .toc__menu {
-  // margin: 0;
-  margin: 0px 0px 15px 0px;
+  margin: 0;
   padding: 0;
   width: 100%;
   list-style: none;

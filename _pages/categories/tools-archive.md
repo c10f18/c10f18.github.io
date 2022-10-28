@@ -6,4 +6,5 @@ permalink: /categories/tools-archive
 type: archive
 ---
 
-Sample document listing for the collection `_tools`.
+{% assign posts = site.categories.tools %}
+{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

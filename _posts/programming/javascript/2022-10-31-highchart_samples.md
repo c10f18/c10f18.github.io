@@ -15,7 +15,8 @@ last_modified_at: 2022-10-31 17:00:00 +0900
 * Highchart doc  : [Highchart doc](https://www.highcharts.com/docs/index, "Highchart doc")
 * Highchart demo : [Highchart demo](https://www.highcharts.com/demo, "Highchart demo")
 
- # Line chart
+# Line chart
+
  <div class="highchart_line_sample">
  </div>
  <script>

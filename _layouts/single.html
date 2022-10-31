@@ -91,51 +91,53 @@ layout: default
   {% endif %}
 </div>
 <script>
-  var canvas = $('#toc__bg')[0];
-  canvas.height = $('.toc__bg-box')[0].offsetHeight;
-  canvas.width = $('.toc__bg-box')[0].offsetWidth;
-  var ctx = canvas.getContext('2d');
+  $(window).on('resize', function(){
+    var canvas = $('#toc__bg')[0];
+    canvas.height = $('.toc__bg-box')[0].offsetHeight;
+    canvas.width = $('.toc__bg-box')[0].offsetWidth;
+    var ctx = canvas.getContext('2d');
 
-  var toc_deco_radius = 14;
-  var toc_padding = 2;
-  var toc_height = $('.toc__bg-box')[0].offsetHeight - toc_padding * 2;
-  var toc_width = $('.toc__bg-box')[0].offsetWidth - toc_padding * 2;
-  var toc_title_height = $('#toc__title')[0].offsetHeight - toc_padding * 2;
-  var toc_title_width = $('#toc__title')[0].offsetWidth - toc_padding * 2;
+    var toc_deco_radius = 14;
+    var toc_padding = 2;
+    var toc_height = $('.toc__bg-box')[0].offsetHeight - toc_padding * 2;
+    var toc_width = $('.toc__bg-box')[0].offsetWidth - toc_padding * 2;
+    var toc_title_height = $('#toc__title')[0].offsetHeight - toc_padding * 2;
+    var toc_title_width = $('#toc__title')[0].offsetWidth - toc_padding * 2;
 
-  ctx.beginPath();
-  //시작
-  ctx.arc(toc_padding, toc_padding, toc_deco_radius, 0, Math.PI/2, false);
-  ctx.moveTo(toc_padding, toc_padding + toc_deco_radius);
-  //left
-  ctx.lineTo(toc_padding, toc_height/2 - toc_deco_radius);
-  ctx.arc(toc_padding, toc_height/2, toc_deco_radius/2, -Math.PI/2, Math.PI/2, false);
-  ctx.moveTo(toc_padding, toc_height/2 + toc_deco_radius/2);
-  ctx.lineTo(toc_padding, toc_height - toc_deco_radius);
-  ctx.arc(toc_padding, toc_height, toc_deco_radius, -Math.PI/2, 0, false);
-  //bottom
-  ctx.moveTo(toc_padding + toc_deco_radius, toc_height);
-  ctx.lineTo(toc_width - toc_deco_radius, toc_height);
-  ctx.arc(toc_width, toc_height, toc_deco_radius, Math.PI, -Math.PI/2, false);
-  ctx.moveTo(toc_width, toc_height - toc_deco_radius);
-  //right
-  ctx.lineTo(toc_width, toc_height/2 + toc_deco_radius);
-  ctx.arc(toc_width, toc_height/2, toc_deco_radius/2, Math.PI/2, -Math.PI/2, false);
-  ctx.moveTo(toc_width, toc_height/2 - toc_deco_radius/2);
-  ctx.lineTo(toc_width, toc_padding + toc_deco_radius);
-  ctx.arc(toc_width, toc_padding, toc_deco_radius, Math.PI/2, Math.PI, false);
-  //top
-  ctx.moveTo(toc_width - toc_deco_radius, toc_padding);
-  ctx.lineTo(toc_padding + toc_deco_radius, toc_padding);
+    ctx.beginPath();
+    //시작
+    ctx.arc(toc_padding, toc_padding, toc_deco_radius, 0, Math.PI/2, false);
+    ctx.moveTo(toc_padding, toc_padding + toc_deco_radius);
+    //left
+    ctx.lineTo(toc_padding, toc_height/2 - toc_deco_radius);
+    ctx.arc(toc_padding, toc_height/2, toc_deco_radius/2, -Math.PI/2, Math.PI/2, false);
+    ctx.moveTo(toc_padding, toc_height/2 + toc_deco_radius/2);
+    ctx.lineTo(toc_padding, toc_height - toc_deco_radius);
+    ctx.arc(toc_padding, toc_height, toc_deco_radius, -Math.PI/2, 0, false);
+    //bottom
+    ctx.moveTo(toc_padding + toc_deco_radius, toc_height);
+    ctx.lineTo(toc_width - toc_deco_radius, toc_height);
+    ctx.arc(toc_width, toc_height, toc_deco_radius, Math.PI, -Math.PI/2, false);
+    ctx.moveTo(toc_width, toc_height - toc_deco_radius);
+    //right
+    ctx.lineTo(toc_width, toc_height/2 + toc_deco_radius);
+    ctx.arc(toc_width, toc_height/2, toc_deco_radius/2, Math.PI/2, -Math.PI/2, false);
+    ctx.moveTo(toc_width, toc_height/2 - toc_deco_radius/2);
+    ctx.lineTo(toc_width, toc_padding + toc_deco_radius);
+    ctx.arc(toc_width, toc_padding, toc_deco_radius, Math.PI/2, Math.PI, false);
+    //top
+    ctx.moveTo(toc_width - toc_deco_radius, toc_padding);
+    ctx.lineTo(toc_padding + toc_deco_radius, toc_padding);
 
-  ctx.strokeStyle = "red";
-  ctx.stroke();
+    ctx.strokeStyle = "red";
+    ctx.stroke();
 
-  //cutting line
-  ctx.beginPath();
-  ctx.moveTo(toc_padding, toc_title_height);
-  ctx.lineTo(toc_width, toc_title_height);
-  ctx.strokeStyle = "red";
-  ctx.setLineDash([5, 5]);
-  ctx.stroke();
+    //cutting line
+    ctx.beginPath();
+    ctx.moveTo(toc_padding, toc_title_height);
+    ctx.lineTo(toc_width, toc_title_height);
+    ctx.strokeStyle = "red";
+    ctx.setLineDash([5, 5]);
+    ctx.stroke();
+  });
 </script>

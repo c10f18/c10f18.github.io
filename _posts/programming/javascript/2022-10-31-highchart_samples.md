@@ -6,6 +6,8 @@ categories:
 tags:
   - [Programming, Javascript]
 
+highchart: true 
+
 date: 2022-10-31 17:00:00 +0900
 last_modified_at: 2022-10-31 17:00:00 +0900
 ---

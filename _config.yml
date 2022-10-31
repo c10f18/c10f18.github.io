@@ -130,6 +130,11 @@ author:
 head_scripts:
   - https://code.jquery.com/jquery-3.2.1.min.js
 
+# Site Library
+highchart_scripts:
+  - https://code.highcharts.com/highcharts.js
+  - https://code.highcharts.com/modules/series-label.js
+
 # Site Footer
 footer:
   links:

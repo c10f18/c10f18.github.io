@@ -23,3 +23,9 @@
     <script src="{{ script | relative_url }}"></script>
   {% endfor %}
 {% endif %}
+
+{% if page.highchart %}
+  {% for script in site.highchart_scripts %}
+    <script src="{{ script | relative_url }}"></script>
+  {% endfor %}
+{% end if %}

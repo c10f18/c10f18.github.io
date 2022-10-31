@@ -91,7 +91,14 @@ layout: default
   {% endif %}
 </div>
 <script>
+  $(window).ready({
+    drawTocBG();
+  });
   $(window).on('resize', function(){
+    drawTocBG();
+  });
+
+  function drawTocBG(){
     var canvas = $('#toc__bg')[0];
     canvas.height = $('.toc__bg-box')[0].offsetHeight;
     canvas.width = $('.toc__bg-box')[0].offsetWidth;
@@ -139,5 +146,5 @@ layout: default
     ctx.strokeStyle = "red";
     ctx.setLineDash([5, 5]);
     ctx.stroke();
-  });
+  }
 </script>

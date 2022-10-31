@@ -17,11 +17,11 @@ last_modified_at: 2022-10-31 17:00:00 +0900
 
 # Line chart
 
- <div class="highchart_line_sample">
+ <div id="highchart_line_sample">
  </div>
  <script>
   Highcharts.chart('highchart_line_sample', {
-
+  
     title: {
         text: 'U.S Solar Employment Growth by Job Category, 2010-2020'
     },

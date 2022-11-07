@@ -96,3 +96,220 @@ last_modified_at: 2022-10-31 17:00:00 +0900
 
 });
  </script>
+
+ # multi Axis Line chart
+
+ <div id="highchart_multi_axis_line_sample">
+ </div>
+ <script>
+  Highcharts.chart('highchart_multi_axis_line_sample', {
+
+    title: {
+        text: 'Tank pressure, Ship speed, BOG'
+    },
+
+    /* subtitle: {
+        text: ''
+    }, */
+
+    yAxis: [{
+        title: {
+            text: 'Pressure, mbarg',
+            style: {
+                color: Highcharts.getOptions().colors[0]
+            }
+        },
+        labels: {
+            format: '{value}',
+            style: {
+                color: Highcharts.getOptions().colors[0]
+            }
+        }
+    },{
+    	title: {
+            text: 'Ship speed, kt',
+            style: {
+                color: Highcharts.getOptions().colors[3]
+            }
+        },
+    	opposite: true,
+      labels: {
+            align: 'right',
+            format: '{value}',
+            style: {
+                color: Highcharts.getOptions().colors[3]
+            }
+        },
+    },{
+    	title: {
+            text: 'M/E load, %',
+            style: {
+                color: Highcharts.getOptions().colors[2]
+            }
+        },
+      opposite: true,
+      labels: {
+            align: 'right',
+            format: '{value}',
+            style: {
+                color: Highcharts.getOptions().colors[2]
+            }
+        },
+    }],
+
+    xAxis: {
+    	type: "category",
+      gridLineWidth: 1
+    },
+
+    legend: {
+        layout: 'horizontal',
+        align: 'center',
+        verticalAlign: 'bottom'
+    },
+
+    plotOptions: {
+        series: {
+            label: {
+                connectorAllowed: false
+            },
+            marker: {
+                enabled: false
+            }
+        }
+    },
+    
+    tooltip: {
+        shared: true
+    },
+
+    series: [{
+        name: 'Pressure (predicted)',
+        color: Highcharts.getOptions().colors[0],
+        yAxis: 0,
+        dashStyle: 'dash',
+        tooltip: {
+            valueSuffix: ' mbarg'
+        },
+        data: [
+            ["22-03-07<br>17:54", 43934], 
+            ["22-03-12<br>18:35", 48656], 
+            ["22-03-15<br>06:55", 65165], 
+            ["22-03-17<br>19:16", 81827], 
+            ["22-03-20<br>07:36", 112143], 
+            ["22-03-22<br>19:57", 142383],
+            ["22-03-25<br>08:17", 171533], 
+            ["22-03-27<br>20:38", 165174], 
+            ["22-03-30<br>08:59", 155157]
+        ]
+    }, {
+        name: 'Pressure (acture)',
+        color: Highcharts.getOptions().colors[0],
+        yAxis: 0,
+        tooltip: {
+            valueSuffix: ' mbarg'
+        },
+        data: [
+            ["22-03-07<br>17:54", 43934], 
+            ["22-03-12<br>18:35", 48656], 
+            ["22-03-15<br>06:55", 65165], 
+            ["22-03-17<br>19:16", 81827], 
+            ["22-03-20<br>07:36", 112143], 
+            ["22-03-22<br>19:57", null],
+            ["22-03-25<br>08:17", null], 
+            ["22-03-27<br>20:38", null], 
+            ["22-03-30<br>08:59", null]
+        ]
+    }, {
+        name: 'Ship speed (predicted)',
+        color: Highcharts.getOptions().colors[3],
+        yAxis: 1,
+        dashStyle: 'dash',
+        tooltip: {
+            valueSuffix: ' knot'
+        },
+        data: [
+            ["22-03-07<br>17:54", 24916], 
+            ["22-03-12<br>18:35", 37941], 
+            ["22-03-15<br>06:55", 29742], 
+            ["22-03-17<br>19:16", 29851], 
+            ["22-03-20<br>07:36", 32490], 
+            ["22-03-22<br>19:57", 30282],
+            ["22-03-25<br>08:17", 38121], 
+            ["22-03-27<br>20:38", 36885], 
+            ["22-03-30<br>08:59", 33726]
+        ]
+    }, {
+        name: 'Ship speed (actural)',
+        color: Highcharts.getOptions().colors[3],
+        yAxis: 1,
+        tooltip: {
+            valueSuffix: ' knot'
+        },
+        data: [
+            ["22-03-07<br>17:54", 24916], 
+            ["22-03-12<br>18:35", 37941], 
+            ["22-03-15<br>06:55", 29742], 
+            ["22-03-17<br>19:16", 29851], 
+            ["22-03-20<br>07:36", 32490], 
+            ["22-03-22<br>19:57", null],
+            ["22-03-25<br>08:17", null], 
+            ["22-03-27<br>20:38", null], 
+            ["22-03-30<br>08:59", null]
+        ]
+    }, {
+        name: 'M/E load % (predicted)',
+        color: Highcharts.getOptions().colors[2],
+        yAxis: 2,
+        dashStyle: 'dash',
+        tooltip: {
+            valueSuffix: ' %'
+        },
+        data: [
+            ["22-03-07<br>17:54", 11744], 
+            ["22-03-12<br>18:35", 30000], 
+            ["22-03-15<br>06:55", 16005], 
+            ["22-03-17<br>19:16", 19771], 
+            ["22-03-20<br>07:36", 20185], 
+            ["22-03-22<br>19:57", 24377],
+            ["22-03-25<br>08:17", 32147], 
+            ["22-03-27<br>20:38", 30912], 
+            ["22-03-30<br>08:59", 29243]
+        ]
+    }, {
+        name: 'M/E load % (actual)',
+        color: Highcharts.getOptions().colors[2],
+        yAxis: 2,
+        tooltip: {
+            valueSuffix: ' %'
+        },
+        data: [
+            ["22-03-07<br>17:54", 11744], 
+            ["22-03-12<br>18:35", 30000], 
+            ["22-03-15<br>06:55", 16005], 
+            ["22-03-17<br>19:16", 19771], 
+            ["22-03-20<br>07:36", 20185], 
+            ["22-03-22<br>19:57", null],
+            ["22-03-25<br>08:17", null], 
+            ["22-03-27<br>20:38", null], 
+            ["22-03-30<br>08:59", null]
+        ]
+    }],
+
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                legend: {
+                    layout: 'horizontal',
+                    align: 'center',
+                    verticalAlign: 'bottom'
+                }
+            }
+        }]
+    }
+
+});
+ </script>

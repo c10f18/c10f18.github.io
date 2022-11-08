@@ -21,33 +21,27 @@ last_modified_at: 2022-10-31 17:00:00 +0900
  </div>
  <script>
   Highcharts.chart('highchart_line_sample', {
-  
     title: {
         text: 'U.S Solar Employment Growth by Job Category, 2010-2020'
     },
-
     subtitle: {
         text: 'Source: <a href="https://irecusa.org/programs/solar-jobs-census/" target="_blank">IREC</a>'
     },
-
     yAxis: {
         title: {
             text: 'Number of Employees'
         }
     },
-
     xAxis: {
         accessibility: {
             rangeDescription: 'Range: 2010 to 2020'
         }
     },
-
     legend: {
         layout: 'vertical',
         align: 'right',
         verticalAlign: 'middle'
     },
-
     plotOptions: {
         series: {
             label: {
@@ -56,7 +50,6 @@ last_modified_at: 2022-10-31 17:00:00 +0900
             pointStart: 2010
         }
     },
-
     series: [{
         name: 'Installation & Developers',
         data: [43934, 48656, 65165, 81827, 112143, 142383,
@@ -78,7 +71,6 @@ last_modified_at: 2022-10-31 17:00:00 +0900
         data: [21908, 5548, 8105, 11248, 8989, 11816, 18274,
             17300, 13053, 11906, 10073]
     }],
-
     responsive: {
         rules: [{
             condition: {
@@ -93,7 +85,6 @@ last_modified_at: 2022-10-31 17:00:00 +0900
             }
         }]
     }
-
 });
  </script>
 
@@ -103,7 +94,6 @@ last_modified_at: 2022-10-31 17:00:00 +0900
  </div>
  <script>
   Highcharts.chart('highchart_multi_axis_line_sample', {
-
     title: {
         text: 'Tank pressure, Ship speed, BOG'
     },
@@ -151,33 +141,33 @@ last_modified_at: 2022-10-31 17:00:00 +0900
             }
         },
     }],
-
     xAxis: {
     	type: "category",
       gridLineWidth: 1
     },
-
     legend: {
         layout: 'horizontal',
         align: 'center',
         verticalAlign: 'bottom'
     },
-
     plotOptions: {
         series: {
             label: {
                 connectorAllowed: false
             },
             marker: {
-                enabled: false
+                enabled: false,
+                states: {
+                    hover: {
+                        enabled: false
+                    }
+                }
             }
         }
     },
-    
     tooltip: {
         shared: true
     },
-
     series: [{
         name: 'Pressure (predicted)',
         color: Highcharts.getOptions().colors[0],
@@ -290,7 +280,6 @@ last_modified_at: 2022-10-31 17:00:00 +0900
             ["22-03-30<br>08:59", null]
         ]
     }],
-
     responsive: {
         rules: [{
             condition: {
@@ -305,7 +294,6 @@ last_modified_at: 2022-10-31 17:00:00 +0900
             }
         }]
     }
-
 });
  </script>
 
@@ -347,7 +335,12 @@ Highcharts.chart('highchart_stacked_area_sample', {
             marker: {
                 lineWidth: 1,
                 lineColor: '#666666',
-                enabled: false
+                enabled: false,
+                states: {
+                    hover: {
+                        enabled: false
+                    }
+                }
             }
         }
     },
@@ -364,13 +357,11 @@ Highcharts.chart('highchart_stacked_area_sample', {
         lineWidth: 5,
         color: Highcharts.getOptions().colors[5],
         data: [2000, 2050, 2110, 2050, 1950, null, null, null, null, null]
-
     }, {
         name: 'LDC_GCU',
         type: 'area',
         color: Highcharts.getOptions().colors[7],
         data: [0, 0, 0, 10, 50, 1100, 1150, 900, 0, 0]
-
     }, {
         name: 'LDC_Engine',
         type: 'area',

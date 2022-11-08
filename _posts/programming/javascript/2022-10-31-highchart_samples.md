@@ -97,7 +97,7 @@ last_modified_at: 2022-10-31 17:00:00 +0900
 });
  </script>
 
- # Multi axis line chart
+# Multi axis line chart
 
  <div id="highchart_multi_axis_line_sample">
  </div>
@@ -107,11 +107,6 @@ last_modified_at: 2022-10-31 17:00:00 +0900
     title: {
         text: 'Tank pressure, Ship speed, BOG'
     },
-
-    /* subtitle: {
-        text: ''
-    }, */
-
     yAxis: [{
         title: {
             text: 'Pressure, mbarg',
@@ -314,7 +309,7 @@ last_modified_at: 2022-10-31 17:00:00 +0900
 });
  </script>
 
- # Stacked area chart
+# Stacked area chart
 
  <div id="highchart_stacked_area_sample">
  </div>
@@ -334,6 +329,9 @@ Highcharts.chart('highchart_stacked_area_sample', {
     tooltip: {
         shared: true,
         headerFormat: '<span style="font-size:12px"><b>{point.key}</b></span><br>'
+    },
+    legend: {
+    		enabled: false
     },
     plotOptions: {
         series: {

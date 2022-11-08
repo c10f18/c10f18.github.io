@@ -134,6 +134,8 @@ head_scripts:
 highchart_scripts:
   - https://code.highcharts.com/highcharts.js
   - https://code.highcharts.com/modules/series-label.js
+  - https://code.highcharts.com/modules/exporting.js
+  - https://code.highcharts.com/modules/export-data.js
 
 # Site Footer
 footer:

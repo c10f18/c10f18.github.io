@@ -97,7 +97,7 @@ last_modified_at: 2022-10-31 17:00:00 +0900
 });
  </script>
 
- # multi Axis Line chart
+ # Multi axis line chart
 
  <div id="highchart_multi_axis_line_sample">
  </div>
@@ -311,5 +311,73 @@ last_modified_at: 2022-10-31 17:00:00 +0900
         }]
     }
 
+});
+ </script>
+
+ # Stacked area chart
+
+ <div id="highchart_stacked_area_sample">
+ </div>
+ <script>
+Highcharts.chart('highchart_stacked_area_sample', {
+    title: {
+        text: 'BOG usage'
+    },
+    chart: {
+        type: 'area'
+    },
+    yAxis: {
+        title: {
+            text: 'Mass flow, kg/h'
+        }
+    },
+    tooltip: {
+        shared: true,
+        headerFormat: '<span style="font-size:12px"><b>{point.key}</b></span><br>'
+    },
+    plotOptions: {
+        series: {
+            marker: {
+                enabled: false
+            },
+            type: 'area',
+        },
+        area: {
+            stacking: 'normal',
+            lineColor: '#666666',
+            lineWidth: 1,
+            marker: {
+                lineWidth: 1,
+                lineColor: '#666666',
+                enabled: false
+            }
+        }
+    },
+    series: [{
+        name: 'BOG (predicted)',
+        type: 'line',
+        lineWidth: 5,
+        dashStyle: 'dash',
+        color: Highcharts.getOptions().colors[5],
+        data: [2000, 2050, 2110, 2050, 1950, 2100, 1850, 1920, 2300, 2350]
+    }, {
+        name: 'BOG (actual)',
+        type: 'line',
+        lineWidth: 5,
+        color: Highcharts.getOptions().colors[5],
+        data: [2000, 2050, 2110, 2050, 1950, null, null, null, null, null]
+
+    }, {
+        name: 'LDC_GCU',
+        type: 'area',
+        color: Highcharts.getOptions().colors[7],
+        data: [0, 0, 0, 10, 50, 1100, 1150, 900, 0, 0]
+
+    }, {
+        name: 'LDC_Engine',
+        type: 'area',
+        color: Highcharts.getOptions().colors[6],
+        data: [2000, 2050, 2100, 2040, 1900, 1000, 700, 1020, 2300, 2350]
+    }]
 });
  </script>

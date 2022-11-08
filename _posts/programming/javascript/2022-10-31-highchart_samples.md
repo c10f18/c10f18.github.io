@@ -115,7 +115,8 @@ last_modified_at: 2022-10-31 17:00:00 +0900
             text: 'Ship speed, kt',
             style: {
                 color: Highcharts.getOptions().colors[3]
-            }
+            },
+            rotation: 270
         },
     	opposite: true,
       labels: {
@@ -130,7 +131,8 @@ last_modified_at: 2022-10-31 17:00:00 +0900
             text: 'M/E load, %',
             style: {
                 color: Highcharts.getOptions().colors[2]
-            }
+            },
+            rotation: 270
         },
       opposite: true,
       labels: {

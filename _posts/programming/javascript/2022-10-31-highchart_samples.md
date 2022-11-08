@@ -166,6 +166,8 @@ last_modified_at: 2022-10-31 17:00:00 +0900
         }
     },
     tooltip: {
+        crosshairs: true,
+        animation: true,
         shared: true
     },
     series: [{
@@ -315,6 +317,8 @@ Highcharts.chart('highchart_stacked_area_sample', {
         }
     },
     tooltip: {
+        crosshairs: true,
+        animation: true,
         shared: true,
         headerFormat: '<span style="font-size:12px"><b>{point.key}</b></span><br>'
     },

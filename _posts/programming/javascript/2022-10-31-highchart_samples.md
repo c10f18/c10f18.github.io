@@ -376,3 +376,101 @@ Highcharts.chart('highchart_stacked_area_sample', {
     }]
 });
  </script>
+
+# Progress bar chart
+
+ <div id="highchart_progress_bar_sample">
+ </div>
+ <script>
+Highcharts.chart('highchart_progress_bar_sample', {
+  chart: {
+    type: 'bar',
+    height: 70
+  },  
+  title: {
+    text: '',
+    align: 'center',
+    margin: 0
+  },
+  credits: false,
+  legend: false,
+  tooltip: false,
+  plotOptions: {
+    bar: {
+      borderWidth: 0,
+      borderRadius: 3,
+      animation: false,
+      enableMouseTracking: false
+    },
+    series: {
+      pointWidth: 16,
+      color: {
+        pattern: {
+          path: {
+            d: 'M 0 0 L 8 10 L 16 0 M 0 4 L 8 13 L 16 3',
+            strokeWidth: 3
+          },
+          width: 16,
+          height: 17,
+          x: 7
+        }
+      }
+    }
+  },
+  xAxis: {
+    visible: false
+  },
+  yAxis: {
+    visible: false,
+    min: 0,
+    max: 100,
+    title: {
+      text: null
+    },
+    gridLineWidth: 0,
+    labels: {
+      style: {
+        color: Highcharts.getOptions().colors[0]
+      }
+    }
+  },
+  series: [
+   {
+    name: "Fill",
+    data: [100],
+    color: {
+      pattern: {
+        color: 'gray'
+      }
+    },
+    grouping: false
+  },
+  {
+    name: "Percentage",
+    data: [75],
+    color: {
+      pattern: {
+        color: 'orange'
+      }
+    },
+    dataLabels: {
+      enabled: true,
+      inside: false,
+      align: 'right',
+      position: 'bottom',
+      x: 28,
+      y: 28,
+      format: 'Current',
+      shape: 'callout',
+      crop: false,
+      overflow: "allow",
+      backgroundColor: 'rgba(0, 0, 0, 0.75)',
+      style: {
+        color: '#FFFFFF',
+        textOutline: false
+      }
+    }
+  }
+  ]
+})
+ </script>

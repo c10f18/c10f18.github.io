@@ -136,6 +136,7 @@ highchart_scripts:
   - https://code.highcharts.com/modules/series-label.js
   - https://code.highcharts.com/modules/exporting.js
   - https://code.highcharts.com/modules/export-data.js
+  - https://code.highcharts.com/modules/pattern-fill.js
 
 # Site Footer
 footer:

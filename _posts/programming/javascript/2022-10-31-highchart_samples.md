@@ -107,7 +107,7 @@ last_modified_at: 2022-10-31 17:00:00 +0900
         labels: {
             format: '{value}',
             style: {
-                color: '#096191'
+                color: '#f29416'
             }
         }
     },{
@@ -211,7 +211,7 @@ last_modified_at: 2022-10-31 17:00:00 +0900
         ]
     }, {
         name: 'Ship speed (predicted)',
-        color: '#ffe13b',
+        color: '#239148',
         yAxis: 1,
         dashStyle: 'dash',
         tooltip: {
@@ -230,7 +230,7 @@ last_modified_at: 2022-10-31 17:00:00 +0900
         ]
     }, {
         name: 'Ship speed (actural)',
-        color: '#ffe13b',
+        color: '#239148',
         yAxis: 1,
         tooltip: {
             valueSuffix: ' knot'
@@ -248,7 +248,7 @@ last_modified_at: 2022-10-31 17:00:00 +0900
         ]
     }, {
         name: 'M/E load % (predicted)',
-        color: '#239148',
+        color: '#ffe13b',
         yAxis: 2,
         dashStyle: 'dash',
         tooltip: {
@@ -267,7 +267,7 @@ last_modified_at: 2022-10-31 17:00:00 +0900
         ]
     }, {
         name: 'M/E load % (actual)',
-        color: '#239148',
+        color: '#ffe13b',
         yAxis: 2,
         tooltip: {
             valueSuffix: ' %'

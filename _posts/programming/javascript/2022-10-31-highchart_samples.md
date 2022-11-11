@@ -101,20 +101,20 @@ last_modified_at: 2022-10-31 17:00:00 +0900
         title: {
             text: 'Pressure, mbarg',
             style: {
-                color: Highcharts.getOptions().colors[0]
+                color: '#096191'
             }
         },
         labels: {
             format: '{value}',
             style: {
-                color: Highcharts.getOptions().colors[0]
+                color: '#096191'
             }
         }
     },{
     	title: {
             text: 'Ship speed, kt',
             style: {
-                color: Highcharts.getOptions().colors[3]
+                color: '#239148'
             },
             rotation: 270
         },
@@ -123,14 +123,14 @@ last_modified_at: 2022-10-31 17:00:00 +0900
             align: 'right',
             format: '{value}',
             style: {
-                color: Highcharts.getOptions().colors[3]
+                color: '#239148'
             }
         },
     },{
     	title: {
             text: 'M/E load, %',
             style: {
-                color: Highcharts.getOptions().colors[2]
+                color: '#ffe13b'
             },
             rotation: 270
         },
@@ -139,7 +139,7 @@ last_modified_at: 2022-10-31 17:00:00 +0900
             align: 'right',
             format: '{value}',
             style: {
-                color: Highcharts.getOptions().colors[2]
+                color: '#ffe13b'
             }
         },
     }],
@@ -366,12 +366,12 @@ Highcharts.chart('highchart_stacked_area_sample', {
     }, {
         name: 'LDC_GCU',
         type: 'area',
-        color: '#ffe13b',
+        color: '#239148',
         data: [0, 0, 0, 10, 50, 1100, 1150, 900, 0, 0]
     }, {
         name: 'LDC_Engine',
         type: 'area',
-        color: '#239148',
+        color: '#ffe13b',
         data: [2000, 2050, 2100, 2040, 1900, 1000, 700, 1020, 2300, 2350]
     }]
 });

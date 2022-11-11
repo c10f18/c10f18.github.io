@@ -174,7 +174,7 @@ last_modified_at: 2022-10-31 17:00:00 +0900
     },
     series: [{
         name: 'Pressure (predicted)',
-        color: Highcharts.getOptions().colors[0],
+        color: '#096191',
         yAxis: 0,
         dashStyle: 'dash',
         tooltip: {
@@ -193,7 +193,7 @@ last_modified_at: 2022-10-31 17:00:00 +0900
         ]
     }, {
         name: 'Pressure (acture)',
-        color: Highcharts.getOptions().colors[0],
+        color: '#096191',
         yAxis: 0,
         tooltip: {
             valueSuffix: ' mbarg'
@@ -211,7 +211,7 @@ last_modified_at: 2022-10-31 17:00:00 +0900
         ]
     }, {
         name: 'Ship speed (predicted)',
-        color: Highcharts.getOptions().colors[3],
+        color: '#ffe13b',
         yAxis: 1,
         dashStyle: 'dash',
         tooltip: {
@@ -230,7 +230,7 @@ last_modified_at: 2022-10-31 17:00:00 +0900
         ]
     }, {
         name: 'Ship speed (actural)',
-        color: Highcharts.getOptions().colors[3],
+        color: '#ffe13b',
         yAxis: 1,
         tooltip: {
             valueSuffix: ' knot'
@@ -248,7 +248,7 @@ last_modified_at: 2022-10-31 17:00:00 +0900
         ]
     }, {
         name: 'M/E load % (predicted)',
-        color: Highcharts.getOptions().colors[2],
+        color: '#239148',
         yAxis: 2,
         dashStyle: 'dash',
         tooltip: {
@@ -267,7 +267,7 @@ last_modified_at: 2022-10-31 17:00:00 +0900
         ]
     }, {
         name: 'M/E load % (actual)',
-        color: Highcharts.getOptions().colors[2],
+        color: '#239148',
         yAxis: 2,
         tooltip: {
             valueSuffix: ' %'
@@ -355,23 +355,23 @@ Highcharts.chart('highchart_stacked_area_sample', {
         type: 'line',
         lineWidth: 5,
         dashStyle: 'dash',
-        color: Highcharts.getOptions().colors[5],
+        color: '#89ad3f',
         data: [2000, 2050, 2110, 2050, 1950, 2100, 1850, 1920, 2300, 2350]
     }, {
         name: 'BOG (actual)',
         type: 'line',
         lineWidth: 5,
-        color: Highcharts.getOptions().colors[5],
+        color: '#89ad3f',
         data: [2000, 2050, 2110, 2050, 1950, null, null, null, null, null]
     }, {
         name: 'LDC_GCU',
         type: 'area',
-        color: Highcharts.getOptions().colors[7],
+        color: '#ffe13b',
         data: [0, 0, 0, 10, 50, 1100, 1150, 900, 0, 0]
     }, {
         name: 'LDC_Engine',
         type: 'area',
-        color: Highcharts.getOptions().colors[6],
+        color: '#239148',
         data: [2000, 2050, 2100, 2040, 1900, 1000, 700, 1020, 2300, 2350]
     }]
 });
@@ -450,7 +450,7 @@ Highcharts.chart('highchart_progress_bar_sample', {
     data: [75],
     color: {
       pattern: {
-        color: 'orange'
+        color: '#89ad3f'
       }
     },
     dataLabels: {

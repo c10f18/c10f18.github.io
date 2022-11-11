@@ -101,7 +101,7 @@ last_modified_at: 2022-10-31 17:00:00 +0900
         title: {
             text: 'Pressure, mbarg',
             style: {
-                color: '#096191'
+                color: '#f29416'
             }
         },
         labels: {

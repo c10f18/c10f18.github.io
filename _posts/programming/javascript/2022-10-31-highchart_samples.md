@@ -174,7 +174,7 @@ last_modified_at: 2022-10-31 17:00:00 +0900
     },
     series: [{
         name: 'Pressure (predicted)',
-        color: '#096191',
+        color: '#f29416',
         yAxis: 0,
         dashStyle: 'dash',
         tooltip: {
@@ -193,7 +193,7 @@ last_modified_at: 2022-10-31 17:00:00 +0900
         ]
     }, {
         name: 'Pressure (acture)',
-        color: '#096191',
+        color: '#f29416',
         yAxis: 0,
         tooltip: {
             valueSuffix: ' mbarg'
@@ -355,13 +355,13 @@ Highcharts.chart('highchart_stacked_area_sample', {
         type: 'line',
         lineWidth: 5,
         dashStyle: 'dash',
-        color: '#89ad3f',
+        color: '#f29416',
         data: [2000, 2050, 2110, 2050, 1950, 2100, 1850, 1920, 2300, 2350]
     }, {
         name: 'BOG (actual)',
         type: 'line',
         lineWidth: 5,
-        color: '#89ad3f',
+        color: '#f29416',
         data: [2000, 2050, 2110, 2050, 1950, null, null, null, null, null]
     }, {
         name: 'LDC_GCU',
@@ -450,7 +450,7 @@ Highcharts.chart('highchart_progress_bar_sample', {
     data: [75],
     color: {
       pattern: {
-        color: '#89ad3f'
+        color: '#f29416'
       }
     },
     dataLabels: {

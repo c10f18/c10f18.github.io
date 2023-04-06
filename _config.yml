@@ -103,8 +103,8 @@ analytics:
 author:
   name             : "Decalin"
   avatar           :  # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : 
-  location         : 
+  bio              :
+  location         :
   email            :
   links:
     - label: "sallyiam00@gmail.com"
@@ -137,6 +137,8 @@ highchart_scripts:
   - https://code.highcharts.com/modules/exporting.js
   - https://code.highcharts.com/modules/export-data.js
   - https://code.highcharts.com/modules/pattern-fill.js
+  - https://code.highcharts.com/gantt/highcharts-gantt.js
+  - https://code.highcharts.com/gantt/modules/accessibility.js
 
 # Site Footer
 footer:

@@ -477,3 +477,135 @@ last_modified_at: 2022-11-14 17:00:00 +0900
     series: data_progress_bar_sample
   });
  </script>
+
+# Inverted Gantt Chart
+
+ <div id="highchart_inverted_gantt_sample">
+ </div>
+ <script>
+  var data_inverted_gantt_sample = [{
+      name: '24H'
+    },{
+      name: '23H'
+    },{
+      name: '22H'
+    },{
+      name: '21H'
+    },{
+      name: '20H'
+    },{
+      name: '19H'
+    },{
+      name: '18H'
+    },{
+      name: '17H'
+    },{
+      name: '16H'
+    },{
+      name: '15H'
+    },{
+      name: '14H'
+    },{
+      name: '13H'
+    },{
+      name: '12H'
+    },{
+      name: '11H'
+    },{
+      name: '10H'
+    },{
+      name: '9H'
+    },{
+      name: '8H'
+    },{
+      name: '7H'
+    },{
+      name: '6H'
+    },{
+      name: '5H'
+    },{
+      name: '4H'
+    },{
+      name: '3H'
+    },{
+      name: '2H'
+    },{
+      name: '1H'
+    },{
+      name: '0H'
+    },{
+        start: 1,
+        end: 30,          
+        name: '5H'
+    } ,{
+        start: 1,
+        end: 40,
+        name: '4H'
+    },{
+        start: 50,
+        end: 59,
+        name: '4H'
+    },{
+        start: 1,
+        end: 30,          
+        name: '3H'
+    } ,{
+        start: 1,
+        end: 40,
+        name: '2H'
+    },{
+        start: 50,
+        end: 59,
+        name: '2H'
+    },{
+        start: 1,
+        end: 30,          
+        name: '1H'
+    } ,{
+        start: 1,
+        end: 40,
+        name: '0H'
+    },{
+        start: 50,
+        end: 59,
+        name: '0H'
+    }];
+  Highcharts.ganttChart('highchart_inverted_gantt_sample', {
+      chart: {
+          inverted: true,
+          plotBorderWidth: 1
+      },
+      title: {
+          text: 'Inverted Gantt Chart'
+      },
+      accessibility: {
+          keyboardNavigation: {
+              seriesNavigation: {
+                  mode: 'serialize'
+              }
+          }
+      },
+      lang: {
+          accessibility: {
+              axis: {
+                  xAxisDescriptionPlural: 'The chart has a two-part X axis showing time in both week numbers and days.'
+              }
+          }
+      },
+      xAxis: [{
+          opposite: false,
+          reversed:false,
+          visible:false
+      }, {
+          opposite: false,
+          visible:false
+      }],
+      yAxis: {
+          uniqueNames: true,
+          opposite: false
+      },
+      series: [{
+          data: data_inverted_gantt_sample
+      }]
+  });
+</script>

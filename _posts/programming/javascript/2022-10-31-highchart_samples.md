@@ -602,7 +602,17 @@ last_modified_at: 2022-11-14 17:00:00 +0900
       }],
       yAxis: {
           uniqueNames: true,
-          opposite: false
+          opposite: false,
+          labels:{
+            style: {
+              fontSize: '8px'
+            },
+            align: 'left',
+            overflow: true,
+            x: -6,
+            padding: 0,
+            margin: 0
+          }
       },
       series: [{
           data: data_inverted_gantt_sample

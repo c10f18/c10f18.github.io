@@ -609,7 +609,7 @@ last_modified_at: 2022-11-14 17:00:00 +0900
             },
             align: 'left',
             overflow: true,
-            x: -6,
+            x: -10,
             padding: 0,
             margin: 0
           }

@@ -20,8 +20,8 @@ main:
 #    url: /activity-archive/
 #  - title: "Game"
 #    url: /game-archive/
-#  - title: "Recipe"
-#    url: /recipe-archive/
+#  - title: "Recipes"
+#    url: /recipes-archive/
 #- title: "Programming"
 #  url: /programming-archive/
 #  children:
@@ -42,7 +42,7 @@ main:
 #  url: /tools-archive/
 #- title: "Quick-Start Guide"
 #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  
+
 nav-main:
   - title: "Home"
     url: https://c10f18.github.io/

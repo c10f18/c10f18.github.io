@@ -8,6 +8,7 @@ tags:
 
 date: 2022-10-28 15:00:00 +0900
 last_modified_at: 2022-10-28 15:00:00 +0900
+published: false
 ---
 
 # IE에서만 사용가능한 javascript 문법

@@ -8,6 +8,7 @@ tags:
 
 date: 2022-10-28 15:00:00 +0900
 last_modified_at: 2022-10-28 15:00:00 +0900
+published: false
 ---
 # 블로그 변경할 때 유용한 링크들
 

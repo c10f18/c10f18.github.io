@@ -61,8 +61,8 @@ nav-main:
       url: /categories/activity-archive
     - title: "Game"
       url: /categories/game-archive
-    - title: "Recipe"
-      url: /categories/recipe-archive
+    - title: "Recipes"
+      url: /categories/recipes-archive
 
   - title: "Programming"
     children:

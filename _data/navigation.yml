@@ -57,6 +57,8 @@ nav-main:
 
   - title: "Lifestyle"
     children:
+    - title: "Motion Graphic"
+      url: /categories/motion_graphic-archive
     - title: "Activity"
       url: /categories/activity-archive
     - title: "Game"

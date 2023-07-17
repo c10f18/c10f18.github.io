@@ -24,6 +24,7 @@ with open('{파일경로}', 'a') as f:
   f.write('\nwith 문을 사용하면 리스스 해제가 가동으로 된다')
   f.write('\nwith 문 블럭 내에서는 연속적인 쓰기가 가능함')
 ```
+
 ## 파일 쓰기 방법 2
 ```
 f = open('{파일경로}', 'a')
@@ -51,6 +52,26 @@ for lineResult in tmp:
 f.close()
 ```
 
+## 파일 읽는 방법 3
+```
+f = open('{파일경로}', 'r')
+tmp_list = list(enumerate(f))
+for i in range(len(tmp_list)):
+  fileResult += tmp_list[i]
+f.close()
+```
+
+## 읽은 파일에서 전체 라인 수 구하기
+```
+# readLines 이용
+f = open('{파일경로}', 'r', encoding='UTF8' )
+print("파일 길이 : %d" % len(f.readlines()))
+
+# enumerate 이용
+f = open('{파일경로}', 'r', encoding='UTF8' )
+print("파일 길이 : %d" % (len(list(enumerate(f)))))
+```
+
 # 경로 존재 여부 확인 후 파일인지 폴더인지 판단 및 생성, 파일 쓰기
 ```
 import os
@@ -70,7 +91,10 @@ if not os.path.exists(filepath):
     f.close()
 ```
 
-# 현재 코드가 참조중인 폴더 경로를 반환
+
+
+# 경로에서 정보 추출
+## 현재 코드가 참조중인 폴더 경로를 반환
 ```
 import os
 
@@ -78,12 +102,6 @@ current_path = os.getcwd()
 print("현재 위치 : " + current_path)
 ```
 
-# 경로에서 정보 추출
-```
-import os
-
-current_path = os.path.basename(filename)
-```
 ## 파일명 추출
 ```
 import os
@@ -117,4 +135,12 @@ current_path = os.path.splitdrive(filename)
 import os
 
 current_path = os.path.splitext(filename)
+```
+
+# 문자열을 줄바꿈 기준으로 쪼개기
+```
+txt = "1열 테스트\n2열 테스트"
+x = txt.splitlines()
+print(x)
+# 결과 = ['1열 테스트', '2열 테스트']
 ```

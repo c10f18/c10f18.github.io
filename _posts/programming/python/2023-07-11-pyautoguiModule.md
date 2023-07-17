@@ -183,3 +183,38 @@ pyautogui.FAILSAFE = True
 #마우스 제어시 오류 발생시에도 실행을 멈추지않고 유지
 pyautogui.FAILSAFE = False
 ```
+
+# 화면에서 이미지로 찾기
+## 이미지 좌표 얻기
+```
+import pyautogui
+
+img_capture = pyautogui.locateOnScreen("test_icon.png")
+print(img_capture)
+# Box(left=x 좌표, top=y 좌표, width = 이미지 너비, height=이미지 높이) 형태로 반환
+```
+
+## 이미지가 여러개인 경우
+```
+import pyautogui
+
+# 여러개 이미지를 순회하며 클릭
+for i in pyautogui.locateOnScreen("test_icon.png"):
+  pyautogui.click(i, duration=0.25)
+```
+
+## 범위 안에서만 이미지 검색
+```
+import pyautogui
+
+img_capture = pyautogui.locateOnScreen("test_icon.png", region=(1800, 0, 1920, 100))
+```
+
+## 이미지 인식률이 좋지 않은 경우 opencv-python 모듈을 통해 일치율 설정
+```
+import pyautogui
+import opencv-python
+
+# 일치율 70% 설정
+img_capture = pyautogui.locateOnScreen("test_icon.png", confidence=0.7)
+```
